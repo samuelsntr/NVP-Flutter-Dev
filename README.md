@@ -34,6 +34,8 @@ lib/
 │   └── id.json                  # Indonesian translations
 └── main.dart                    # App entry point with Firebase and GetX setup
 
+```
+
 Getting Started
 Prerequisites
 - Flutter SDK
