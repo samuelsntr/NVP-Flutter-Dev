@@ -36,68 +36,76 @@ lib/
 
 ```
 
-Getting Started
+### Getting Started
+
 Prerequisites
-- Flutter SDK
-- Firebase Project with Firebase Authentication and Cloud Messaging enabled
-Setup
-- Clone the repository:
+* Flutter SDK
+* Firebase Project with Firebase Authentication and Cloud Messaging enabled
 
-bash
-Copy code
-git clone https://github.com/samuelsntr/NPV-Flutter-Test.git
-cd yourprojectname
-Install dependencies:
+### Setup
 
-bash
-Copy code
-flutter pub get
-Firebase Configuration:
-
-Add google-services.json in android/app.
-Add GoogleService-Info.plist in ios/Runner.
-Update Android’s build.gradle and iOS’s Podfile if required.
-Run the App:
-
-bash
-Copy code
-flutter run
-Usage
-Registration: Register with an email, password, and location selection on Google Maps.
-Login: Log in with registered credentials.
-Profile Management: View and edit profile information, including name and location.
-Settings: Customize theme and language settings.
-Notifications: Receive push notifications from Firebase Cloud Messaging.
-Firebase Setup Instructions
-Go to Firebase Console and create a new project.
-Add an Android and/or iOS app to your project.
-Download and add google-services.json (Android) and GoogleService-Info.plist (iOS) to the respective directories.
-Enable Firebase Authentication (email/password) and Cloud Messaging in your Firebase project.
-Dependencies
-flutter: ^2.0.0 or later
-get: ^4.6.5 (for state management)
-firebase_core: ^2.10.0 (core Firebase integration)
-firebase_auth: ^4.3.0 (for authentication)
-firebase_messaging: ^14.3.0 (for push notifications)
-google_maps_flutter: ^2.0.10 (Google Maps integration)
-intl: ^0.17.0 (for internationalization)
-Folder Structure
-controllers/: All GetX controllers managing app state and interactions with Firebase.
-screens/: Flutter widgets representing different app screens.
-l10n/: Localization files for English and Indonesian.
-Contributing
-Fork the project.
-Create your feature branch:
-bash
-Copy code
-git checkout -b feature/YourFeature
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add some feature'
-Push to the branch:
-bash
-Copy code
-git push origin feature/YourFeature
-Open a pull request.
+1. Clone the repository:
 ```
+git clone https://github.com/samuelsntr/NPV-Flutter-Test.git
+cd npv-flutter-test
+```
+2. Install dependencies:
+```
+flutter pub get
+```
+
+3. Firebase Configuration:
+* Add google-services.json in android/app.
+* Add GoogleService-Info.plist in ios/Runner.
+* Update Android’s build.gradle and iOS’s Podfile if required.
+
+4. Run the App:
+```
+flutter run
+```
+### Usage
+
+* Registration: Register with an email, password, and location selection on Google Maps.
+* Login: Log in with registered credentials.
+* Profile Management: View and edit profile information, including name and location.
+* Settings: Customize theme and language settings.
+* Notifications: Receive push notifications from Firebase Cloud Messaging.
+
+### Firebase Setup Instructions
+
+1. Go to Firebase Console and create a new project.
+2. Add an Android and/or iOS app to your project.
+3. Download and add google-services.json (Android) and GoogleService-Info.plist (iOS) to the respective directories.
+4. Enable Firebase Authentication (email/password) and Cloud Messaging in your Firebase project.
+
+### Dependencies
+
+* flutter: ^2.0.0 or later
+* get: ^4.6.5 (for state management)
+* firebase_core: ^2.10.0 (core Firebase integration)
+* firebase_auth: ^4.3.0 (for authentication)
+* firebase_messaging: ^14.3.0 (for push notifications)
+* google_maps_flutter: ^2.0.10 (Google Maps integration)
+* intl: ^0.17.0 (for internationalization)
+
+### Folder Structure
+
+* controllers/: All GetX controllers managing app state and interactions with Firebase.
+* screens/: Flutter widgets representing different app screens.
+* l10n/: Localization files for English and Indonesian.
+
+### Contributing
+1. Fork the project.
+2. Create your feature branch:
+```
+git checkout -b feature/YourFeature
+```
+3. Commit your changes:
+```
+git commit -m 'Add some feature'
+```
+4. Push to the branch:
+```
+git push origin feature/YourFeature
+```
+5. Open a pull request.
