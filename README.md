@@ -1,4 +1,4 @@
-# My Flutter App
+# NVP Flutter App Test
 
 A Flutter application with features including user authentication, profile management, Google Maps integration, theme support, and internationalization. Built with GetX for state management and Firebase for backend services.
 
