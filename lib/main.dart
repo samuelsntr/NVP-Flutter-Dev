@@ -14,8 +14,8 @@ Future<void> main() async {
 
   Get.put(ThemeController());
   Get.put(LocaleController());
-  Get.put(NotificationController()); // Add this line
-  Get.put(AuthController()); // Add this line
+  Get.put(NotificationController());
+  Get.put(AuthController());
 
   runApp(MyApp());
 }
